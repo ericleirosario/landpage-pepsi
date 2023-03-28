@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;500;600 & family= Rubik:wght@300;500;600 & family= Ubuntu & display= trocar');
+
+:root {
+    --blue-dark: #070a4e;
+    --blue-medium: #252872;
+    --blue-light: #646693;
+    --red: #e32934;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--blue-dark);
+    color: var(--white);    
+}
+
+body, button, input, textarea {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1120px;   
+    margin: 0 auto;
+    padding: 15px 16px;
+}
+
+.header-navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;    
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-navigation li {
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.header-navigation li:hover {
+    color: var(--red);    
+}
+
+.header-navigation li.active {
+    font-weight: 600;
+}
+
+.header-navigation li a {
+    padding: 10px;
+}
+
+.purchase-button {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 14px 16px;
+    transition: .4s;    
+}
+
+.purchase-button:hover {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    transform: scale(1.04);
+}
+
+main {
+    width: 100%;
+    max-width: 1120px;
+    margin: 72px auto 0;
+    padding: 0px 20px 0 40px ;
+    display: flex;
+}
+
+.main-section {
+    max-width: 645px;
+    padding-left: 40px;
+
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.main-description {
+    margin-top: 18px;
+    font-weight: 300;
+}
+
+.nutritional-container {
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nutritional-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nutritional-items-container {
+    display: flex;
+    gap: 15px;
+}
+
+.nutritional-items-container li {
+    width: 117px;
+    transition: .2s;
+}
+
+.nutritional-items-container li:hover {
+    transform: scale(1.04);
+}
+
+.nutritional-items-container li div {
+    padding: 20px 0;
+    background-color: var(--blue-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.nutritional-items-container li div strong {
+    font-weight: 600;
+    font-size: 24px;    
+}
+
+.nutritional-items-container li footer {
+    padding: 10px 0;
+    background-color: var(--blue-light);
+    text-align: center;
+}
+
+.nutritional-details {
+    max-width: 375px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nutritional-purchase {
+    margin-top: 50px;
+}
+
+.pepsi-images-container {
+    flex: 1;
+    position: relative;
+}
+
+.litle-can {
+    position: absolute;
+    bottom: 0;
+    right: 202px;
+}
+
+.larger-can {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.can-shadow {
+    position: absolute;
+    right: 0;
+    top: 86%;
+    z-index: -1;
+}
